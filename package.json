@@ -13,6 +13,8 @@
     "@nomicfoundation/hardhat-toolbox": "^1.0.1",
     "@nomiclabs/hardhat-ethers": "^2.0.0",
     "@nomiclabs/hardhat-etherscan": "^3.0.0",
+    "@opengsn/contracts": "^2.2.6",
+    "erc721a": "^4.2.0",
     "@typechain/ethers-v5": "^10.1.0",
     "@typechain/hardhat": "^6.1.2",
     "@types/chai": "^4.2.0",
@@ -37,5 +39,9 @@
     "dev-deploy": "npx hardhat run scripts/deploy.ts --network localhost",
     "verify": "npx hardhat run scripts/verify.ts",
     "prettier": "prettier --write 'contracts/**/*.sol'"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3",
+    "erc721a": "^4.2.2"
   }
 }
