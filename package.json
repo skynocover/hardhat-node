@@ -1,0 +1,41 @@
+{
+  "name": "hardhat-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/skynocover/hardhat-node.git",
+  "author": "EricWu <skynocover@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@ethersproject/abi": "^5.4.7",
+    "@ethersproject/providers": "^5.4.7",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.1",
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-etherscan": "^3.0.0",
+    "@typechain/ethers-v5": "^10.1.0",
+    "@typechain/hardhat": "^6.1.2",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": "^9.1.0",
+    "@types/node": ">=12.0.0",
+    "chai": "^4.2.0",
+    "ethers": "^5.4.7",
+    "hardhat": "^2.10.2",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.7.21",
+    "ts-node": ">=8.0.0",
+    "typechain": "^8.1.0",
+    "typescript": ">=4.5.0"
+  },
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "h-node": "npx hardhat node",
+    "local-test": "npx hardhat --network localhost test",
+    "ganache-test": "npx hardhat --network ganache test",
+    "deploy": "npx hardhat run scripts/deploy.ts",
+    "dev-deploy": "npx hardhat run scripts/deploy.ts --network localhost",
+    "verify": "npx hardhat run scripts/verify.ts",
+    "prettier": "prettier --write 'contracts/**/*.sol'"
+  }
+}
